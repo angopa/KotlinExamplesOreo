@@ -20,4 +20,5 @@
     <string name="button_label_rest">-</string>
     <string name="button_label_dot">.</string>
     <string name="button_label_spaces">...</string>
+    <string name="button_label_neg">NEG</string>
 </resources>

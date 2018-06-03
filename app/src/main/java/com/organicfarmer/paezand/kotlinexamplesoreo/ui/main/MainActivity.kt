@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import com.hannesdorfmann.mosby.mvp.MvpActivity
-import com.organicfarmer.paezand.myapplication.R
+import com.organicfarmer.paezand.kotlinexamplesoreo.R
 import com.organicfarmer.paezand.kotlinexamplesoreo.ui.calculator.CalculatorActivity
 
 private val TAG = "MainActivity"
