@@ -6,6 +6,7 @@ import android.widget.Button
 import com.hannesdorfmann.mosby.mvp.MvpActivity
 import com.organicfarmer.paezand.kotlinexamplesoreo.R
 import com.organicfarmer.paezand.kotlinexamplesoreo.ui.calculator.CalculatorActivity
+import com.organicfarmer.paezand.kotlinexamplesoreo.ui.topten.TopTenActivity
 
 private val TAG = "MainActivity"
 
@@ -16,7 +17,11 @@ class MainActivity : MvpActivity<IMainView, IMainPresenter>(), IMainView {
         Log.d(TAG, "======= onCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        showCalculatorScreen()
+        showTopTenScreen()
+    }
+
+    private fun showTopTenScreen() {
+        startActivity(TopTenActivity.newIntent(this))
     }
 
     override fun createPresenter(): MainPresenter {
